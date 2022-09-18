@@ -11,13 +11,6 @@ pipeline{
                 withMaven(maven: 'maven_3_5_0') {
                     sh 'mvn clean install'
 
- pipeline {
-        agent any
-        stages {
-            stage('Compile stage') {
-                steps {
-                    maven(maven : 'Maven_3.5.2'){
-                        bat "mvn clean compile"
                 }
 
             }
@@ -28,18 +21,7 @@ pipeline{
 
                 withMaven(maven: 'maven_3_5_0') {
                     sh 'mvn test'
-             stage('testing stage') {
-                 steps {
-                    maven(maven : 'Maven_3.5.2'){
-                        bat "mvn test"
-                }
-            }
-        }
 
-              stage('deployment stage') {
-                  steps {
-                    maven(maven : 'Maven_3.5.2'){
-                        bat "mvn deploy"
                 }
 
             }
@@ -58,6 +40,5 @@ pipeline{
         }
 
     }
-
 
 }
