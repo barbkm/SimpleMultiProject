@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.deconvolution.project.CucumberRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-18T10:16:38" hostname="Mini-Barbara" time="0.169">
+<testsuite name="com.deconvolution.project.CucumberRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-18T11:31:01" hostname="Mini-Barbara" time="0.16">
   <properties/>
-  <testcase name="Simple Band Test - Simple test" classname="com.deconvolution.project.CucumberRunner" time="0.169"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="Simple Band Test - Simple test" classname="com.deconvolution.project.CucumberRunner" time="0.16"/>
+  <system-out><![CDATA[
+Scenario: Simple test                                         ?[90m# features/SimpleBandTests.feature:2?[0m
+  ?[32mGiven ?[0m?[32mAll information needed for bands analysis are present?[0m ?[90m# StepsDefinition.validateInputs()?[0m
+  ?[32mGiven ?[0m?[32mAll information needed for bands analysis are present?[0m ?[90m# StepsDefinition.validateInputs()?[0m
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

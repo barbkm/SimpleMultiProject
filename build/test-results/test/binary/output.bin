@@ -1,0 +1,4 @@
+
+lScenario: Simple test                                         [90m# features/SimpleBandTests.feature:2[0m
+|  [32mGiven [0m[32mAll information needed for bands analysis are present[0m [90m# StepsDefinition.validateInputs()[0m
+|  [32mGiven [0m[32mAll information needed for bands analysis are present[0m [90m# StepsDefinition.validateInputs()[0m

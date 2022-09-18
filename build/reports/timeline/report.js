@@ -1,4 +1,4 @@
 $(document).ready(function() {
-CucumberHTML.timelineItems.pushArray([{"id":"6ff83f17-f01f-4839-b240-57c86476512e","feature":"Simple Band Test","scenario":"Simple test","start":1663496198490,"group":19,"content":"","tags":"","end":1663496198504,"className":"passed"}]);
+CucumberHTML.timelineItems.pushArray([{"id":"058b04a2-d634-4d44-8438-597395342f6d","feature":"Simple Band Test","scenario":"Simple test","start":1663500661562,"group":19,"content":"","tags":"","end":1663500661587,"className":"passed"}]);
 CucumberHTML.timelineGroups.pushArray([{"id":19,"content":"Thread[ForkJoinPool-2-worker-1,5,main]"}]);
 });

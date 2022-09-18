@@ -39,7 +39,7 @@ tasks {
             if (project.hasProperty("includeTags")) includeTags(project.property("includeTags"))
         }
         // OPTIONAL: Ignore test failures so that build pipelines won't get blocked by failing examples/scenarios
-        ignoreFailures = true
+        ignoreFailures = false
         // OPTIONAL: Copy all system properties from the command line (-D...) to the test environment
         systemProperties(project.gradle.startParameter.systemPropertiesArgs)
         // OPTIONAL: Enable parallel test execution
@@ -49,7 +49,7 @@ tasks {
         // OPTIONAL: Set the fixed number of parallel test executions. Only works for the "fixed" strategy defined above
         systemProperty("cucumber.execution.parallel.config.fixed.parallelism", 4)
         // OPTIONAL: Enable Cucumber plugins, enable/disable as desired
-        systemProperty("cucumber.plugin", "message:build/reports/cucumber.ndjson, timeline:build/reports/timeline, html:build/reports/cucumber.html")
+        systemProperty("cucumber.plugin", "message:build/reports/cucumber.ndjson, timeline:build/reports/timeline, html:build/reports/cucumber.html, pretty ")
         // OPTIONAL: Improve readability of test names in reports
         systemProperty("cucumber.junit-platform.naming-strategy", "long")
         // OPTIONAL: Don't show Cucumber ads
