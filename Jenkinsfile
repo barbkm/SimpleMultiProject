@@ -1,31 +1,29 @@
-pipeline{
+pipeline {
 
     agent any
-
+    tools {
+        maven 'Maven_3.5.2'
+    }
     stages {
-
-        stage ('Compile Stage') {
-
+        stage('Compile stage') {
             steps {
-
-                withMaven() {
-                    sh 'mvn clean install'
-
-                }
-
-            }
+                bat "mvn clean compile"
         }
-    stage ('Test Stage') {
+    }
 
-            steps {
-
-                withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn test'
-
-                }
-
-            }
+         stage('testing stage') {
+             steps {
+                bat "mvn test"
         }
+    }
+
+          stage('deployment stage') {
+              steps {
+                bat "mvn deploy"
+        }
+    }
+
+  }
 
 
         stage ('Cucumber Reports') {
